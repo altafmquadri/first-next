@@ -71,7 +71,20 @@ var Navbar = function Navbar() {
       lineNumber: 14
     },
     __self: this
-  }, "Contact Page")));
+  }, "Contact Page")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/blog",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }, __jsx("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }, "Blog")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Navbar);
