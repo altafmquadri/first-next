@@ -1,5 +1,6 @@
 import fetch from 'isomorphic-unfetch'
 import React, { Component } from 'react';
+import Link from 'next/link'
 
 class Index extends Component {
     render() {
@@ -9,13 +10,16 @@ class Index extends Component {
                 <h1>Our Index Page!!</h1>
                 <ul>
                     {posts.map(p => (
-                        <li key={p.id}>{p.title}</li>
+                        <li key={p.id}>
+                            <Link href={`/post?id=${p.id}`}><a>{p.title}</a></Link>
+                        </li>
                     ))}
                 </ul>
             </div>
         );
     }
 }
+// as={`/p/${p.id}`}
 
 export const getStaticProps = async () => {
     // Call an external API endpoint to get posts.
